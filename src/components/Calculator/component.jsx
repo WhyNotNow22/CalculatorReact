@@ -3,11 +3,11 @@ import Display from '../Display'
 import Buttons from '../Buttons'
 
 function Calculator(props) {
-    const { display, onClick } = props;
+    const { displayFields, onClick } = props;
     return (
         <div className='calculator-container'>
-            <Display display={display}/>
-            <Buttons onClick={onClick}/>
+            <Display displayFields={displayFields} />
+            <Buttons onClick={onClick} />
         </div>
     )
 }

@@ -2,9 +2,15 @@
     flex-basis: 20%;
     display: flex;
     align-items: flex-end;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background-color: #434343;
     margin-bottom: 0.2vh;
     font-size: 100px;
     color: white;
 }
+
+.history {
+    font-size: 0.5em;
+    color: gold;
+}
+

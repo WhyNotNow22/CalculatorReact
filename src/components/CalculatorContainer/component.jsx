@@ -58,7 +58,7 @@ class CalculatorContainer extends React.Component {
                     break;
             }
             return {
-                display: result,
+                display: display,
                 first: result,
             }
         })
@@ -69,7 +69,7 @@ class CalculatorContainer extends React.Component {
         this.setState(prev => {
             return {
                 display: '0',
-                first: prev.display,
+                first: prev.first || prev.display,
                 operation: operation,
             }
         });
@@ -80,7 +80,7 @@ class CalculatorContainer extends React.Component {
         this.setState({
             display: '0',
             first: '',
-            operaation: '',
+            operation: '',
         })
     }
 
@@ -95,9 +95,9 @@ class CalculatorContainer extends React.Component {
     }
 
     render() {
-        const { display } = this.state;
+        const displayFields = this.state;
         return (
-            <Calculator display={display} onClick={this.onClick} />
+            <Calculator displayFields={displayFields} onClick={this.onClick} />
         )
     }
 

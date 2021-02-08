@@ -1,8 +1,6 @@
 #buttons-container {
     flex-basis: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #buttons-container button {
@@ -19,4 +17,22 @@
 
 #buttons-container button.top {
     background-color: #434343;
+}
+
+.top-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.middle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr;
 }
