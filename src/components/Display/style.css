@@ -1,0 +1,10 @@
+.display {
+    flex-basis: 20%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    background-color: #434343;
+    margin-bottom: 0.2vh;
+    font-size: 100px;
+    color: white;
+}

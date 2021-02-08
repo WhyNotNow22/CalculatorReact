@@ -1,0 +1,22 @@
+#buttons-container {
+    flex-basis: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#buttons-container button {
+    font-size: 35px;
+    background-color: #5d5e5e;
+    color: white;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+#buttons-container button.right {
+    background-color: #f2a23c
+}
+
+#buttons-container button.top {
+    background-color: #434343;
+}

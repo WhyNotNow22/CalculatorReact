@@ -1,0 +1,7 @@
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    height: 100vh;
+}
