@@ -43,7 +43,6 @@ class CalculatorContainer extends React.Component {
     }
 
     calculate = () => {
-        console.log('calc')
         this.setState(prev => {
             const { display, first, operation } = prev;
             let result = 0;
@@ -65,7 +64,6 @@ class CalculatorContainer extends React.Component {
     }
 
     changeOperation = (operation) => {
-        console.log('changeoperation')
         this.setState(prev => {
             return {
                 display: '0',
@@ -76,7 +74,6 @@ class CalculatorContainer extends React.Component {
     }
 
     clearDisplay = () => {
-        console.log('clear')
         this.setState({
             display: '0',
             first: '',
@@ -85,7 +82,6 @@ class CalculatorContainer extends React.Component {
     }
 
     changeSign = () => {
-        console.log('changeSign')
         this.setState(prevState => {
             const { display } = prevState;
             return {
@@ -100,8 +96,6 @@ class CalculatorContainer extends React.Component {
             <Calculator displayFields={displayFields} onClick={this.onClick} />
         )
     }
-
-
 }
 
 export default CalculatorContainer

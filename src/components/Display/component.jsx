@@ -5,16 +5,21 @@ function Display({ displayFields }) {
 
     const [size, updateSize] = useState(100)
     const displayRef = useRef(null);
-    const displayContainer = useRef(null);
-    const displayResult = useRef(null);
+    const displayContainer = useRef(null)
+    const displayResult = useRef(null)
 
     useEffect(() => {
         displayRef.current.style.fontSize = size + 'px';
         displayResult.current.style.fontSize = size + 'px';;
-        if (displayRef.current.scrollWidth > displayContainer.current.clientWidth) {
+        if (displayRef.current.scrollWidth > displayContainer.current.clientWidth ||
+            displayResult.current.scrollWidth > displayContainer.current.clientWidth) {
             updateSize(prev => prev * 0.7);
-        } 
-    });
+        }
+        if (displayFields.display === '0') {
+            updateSize(100);
+        }
+    }, [displayFields]);
+
 
     const { display, first } = displayFields;
     return (
